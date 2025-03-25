@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A324BEC5-DCAF-4A1B-9E26-25127D927C0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Minimarket_Espinal_Presentacion</RootNamespace>
+    <AssemblyName>Minimarket Espinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\HP\Desktop\ITSC 2025\Instaladores_v\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>shop_118074.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EDEE39C57F0816B65AC216DA9554E87A8E5EF142</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Minimarket_Espinal_Presentacion_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Almacenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Almacenes.Designer.cs">
+      <DependentUpon>Frm_Almacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Categorias.Designer.cs">
+      <DependentUpon>Frm_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Clientes.Designer.cs">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DashBoard.Designer.cs">
+      <DependentUpon>Frm_DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Entrada_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Entrada_Productos.Designer.cs">
+      <DependentUpon>Frm_Entrada_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MunicipiosPRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MunicipiosPRO.Designer.cs">
+      <DependentUpon>Frm_MunicipiosPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Proveedores.Designer.cs">
+      <DependentUpon>Frm_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ProvinciasDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ProvinciasDP.Designer.cs">
+      <DependentUpon>Frm_ProvinciasDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Marcas.Designer.cs">
+      <DependentUpon>Frm_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Productos.Designer.cs">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Rubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Rubros.Designer.cs">
+      <DependentUpon>Frm_Rubros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Salida_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Salida_Productos.Designer.cs">
+      <DependentUpon>Frm_Salida_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SectoresDIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SectoresDIS.Designer.cs">
+      <DependentUpon>Frm_SectoresDIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Unidades_Medidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Unidades_Medidas.Designer.cs">
+      <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Usuarios.Designer.cs">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_Principal.Designer.cs">
+      <DependentUpon>MDI_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DataSet_MiniMarket_Espinal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_MiniMarket_Espinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Almacenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Almacenes.Designer.cs">
+      <DependentUpon>Frm_Rpt_Almacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Categorias.Designer.cs">
+      <DependentUpon>Frm_Rpt_Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Clientes.Designer.cs">
+      <DependentUpon>Frm_Rpt_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Entrada_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Entrada_Producto.Designer.cs">
+      <DependentUpon>Frm_Rpt_Entrada_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Imprimir_Venta_Generada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Imprimir_Venta_Generada.Designer.cs">
+      <DependentUpon>Frm_Rpt_Imprimir_Venta_Generada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Marcas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_MunicipiosPRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_MunicipiosPRO.Designer.cs">
+      <DependentUpon>Frm_Rpt_MunicipiosPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Productos.Designer.cs">
+      <DependentUpon>Frm_Rpt_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Proveedores.Designer.cs">
+      <DependentUpon>Frm_Rpt_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_ProvinciasDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_ProvinciasDP.Designer.cs">
+      <DependentUpon>Frm_Rpt_ProvinciasDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Rubros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Rubros.Designer.cs">
+      <DependentUpon>Frm_Rpt_Rubros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Salida_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Salida_Productos.Designer.cs">
+      <DependentUpon>Frm_Rpt_Salida_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_SectoresDIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_SectoresDIS.Designer.cs">
+      <DependentUpon>Frm_Rpt_SectoresDIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Unidades_Medidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Rpt_Unidades_Medidas.Designer.cs">
+      <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\DataSet_Reportes_Unificados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Reportes_Unificados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Ingreso_AcumuladoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Ingreso_AcumuladoProducto.Designer.cs">
+      <DependentUpon>Frm_Reporte_Ingreso_AcumuladoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Ingreso_ComprasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Ingreso_ComprasProductos.Designer.cs">
+      <DependentUpon>Frm_Reporte_Ingreso_ComprasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Salida_AcumuladoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Salida_AcumuladoProducto.Designer.cs">
+      <DependentUpon>Frm_Reporte_Salida_AcumuladoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Salida_VentasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Reporte_Salida_VentasProductos.Designer.cs">
+      <DependentUpon>Frm_Reporte_Salida_VentasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Acumulado_Salida_AcumuladoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Acumulado_Salida_AcumuladoProducto.Designer.cs">
+      <DependentUpon>Frm_Rpt_Acumulado_Salida_AcumuladoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Ingreso_AcumuladoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Ingreso_AcumuladoProducto.Designer.cs">
+      <DependentUpon>Frm_Rpt_Ingreso_AcumuladoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Ingreso_ComprarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Ingreso_ComprarProductos.Designer.cs">
+      <DependentUpon>Frm_Rpt_Ingreso_ComprarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Salida_VentasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Unificados\Frm_Rpt_Salida_VentasProductos.Designer.cs">
+      <DependentUpon>Frm_Rpt_Salida_VentasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Frm_Almacenes.resx">
+      <DependentUpon>Frm_Almacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Categorias.resx">
+      <DependentUpon>Frm_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DashBoard.resx">
+      <DependentUpon>Frm_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Entrada_Productos.resx">
+      <DependentUpon>Frm_Entrada_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MunicipiosPRO.resx">
+      <DependentUpon>Frm_MunicipiosPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Proveedores.resx">
+      <DependentUpon>Frm_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ProvinciasDP.resx">
+      <DependentUpon>Frm_ProvinciasDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Marcas.resx">
+      <DependentUpon>Frm_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Productos.resx">
+      <DependentUpon>Frm_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Rubros.resx">
+      <DependentUpon>Frm_Rubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Salida_Productos.resx">
+      <DependentUpon>Frm_Salida_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SectoresDIS.resx">
+      <DependentUpon>Frm_SectoresDIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Unidades_Medidas.resx">
+      <DependentUpon>Frm_Unidades_Medidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Usuarios.resx">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_Principal.resx">
+      <DependentUpon>MDI_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reportes\Frm_MunicipiosPRO.rdlc" />
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Almacenes.resx">
+      <DependentUpon>Frm_Rpt_Almacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Categorias.resx">
+      <DependentUpon>Frm_Rpt_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Clientes.resx">
+      <DependentUpon>Frm_Rpt_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Entrada_Producto.resx">
+      <DependentUpon>Frm_Rpt_Entrada_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Imprimir_Venta_Generada.resx">
+      <DependentUpon>Frm_Rpt_Imprimir_Venta_Generada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Marcas.resx">
+      <DependentUpon>Frm_Rpt_Marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_MunicipiosPRO.resx">
+      <DependentUpon>Frm_Rpt_MunicipiosPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Productos.resx">
+      <DependentUpon>Frm_Rpt_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Proveedores.resx">
+      <DependentUpon>Frm_Rpt_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_ProvinciasDP.resx">
+      <DependentUpon>Frm_Rpt_ProvinciasDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Rubros.resx">
+      <DependentUpon>Frm_Rpt_Rubros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Salida_Productos.resx">
+      <DependentUpon>Frm_Rpt_Salida_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_SectoresDIS.resx">
+      <DependentUpon>Frm_Rpt_SectoresDIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Rpt_Unidades_Medidas.resx">
+      <DependentUpon>Frm_Rpt_Unidades_Medidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Almacenes.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_categorias.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Cliente.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Entrada_Productos.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Imprimir_Venta_Generada.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Marcas.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Productos.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Proveedores.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_ProvinciasDP.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Rubros.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Salida_Productos.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_SectoresDIS.rdlc" />
+    <EmbeddedResource Include="Reportes\Rpt_Unidades_Medidas.rdlc" />
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Reporte_Ingreso_AcumuladoProducto.resx">
+      <DependentUpon>Frm_Reporte_Ingreso_AcumuladoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Reporte_Ingreso_ComprasProductos.resx">
+      <DependentUpon>Frm_Reporte_Ingreso_ComprasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Reporte_Salida_AcumuladoProducto.resx">
+      <DependentUpon>Frm_Reporte_Salida_AcumuladoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Reporte_Salida_VentasProductos.resx">
+      <DependentUpon>Frm_Reporte_Salida_VentasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Rpt_Acumulado_Salida_AcumuladoProducto.resx">
+      <DependentUpon>Frm_Rpt_Acumulado_Salida_AcumuladoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Rpt_Ingreso_AcumuladoProducto.resx">
+      <DependentUpon>Frm_Rpt_Ingreso_AcumuladoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Rpt_Ingreso_ComprarProductos.resx">
+      <DependentUpon>Frm_Rpt_Ingreso_ComprarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Frm_Rpt_Salida_VentasProductos.resx">
+      <DependentUpon>Frm_Rpt_Salida_VentasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Unificados\Rpt_Ingreso_AcumuladoProductos.rdlc" />
+    <EmbeddedResource Include="Reportes_Unificados\Rpt_Ingreso_ComprasProductos.rdlc" />
+    <EmbeddedResource Include="Reportes_Unificados\Rpt_Salidas_VentasProductos.rdlc" />
+    <EmbeddedResource Include="Reportes_Unificados\Rpt_Salida_acumuladoProducto.rdlc" />
+    <None Include="Minimarket_Espinal_Presentacion_1_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reportes\DataSet_MiniMarket_Espinal.xsc">
+      <DependentUpon>DataSet_MiniMarket_Espinal.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSet_MiniMarket_Espinal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_MiniMarket_Espinal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSet_MiniMarket_Espinal.xss">
+      <DependentUpon>DataSet_MiniMarket_Espinal.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes_Unificados\DataSet_Reportes_Unificados.xsc">
+      <DependentUpon>DataSet_Reportes_Unificados.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes_Unificados\DataSet_Reportes_Unificados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Reportes_Unificados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes_Unificados\DataSet_Reportes_Unificados.xss">
+      <DependentUpon>DataSet_Reportes_Unificados.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sol_Minimarket_Espinal_Entidades\Sol_Minimarket_Espinal_Entidades.csproj">
+      <Project>{6a47a669-ec71-4ba4-8c90-00093385e79e}</Project>
+      <Name>Sol_Minimarket_Espinal_Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sol_Minimarket_Espinal_Negocio\Sol_Minimarket_Espinal_Negocio.csproj">
+      <Project>{91212653-4bad-4492-9ed4-d0bd179c3267}</Project>
+      <Name>Sol_Minimarket_Espinal_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="shop_118074.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Copia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
