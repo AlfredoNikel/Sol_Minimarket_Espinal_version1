@@ -129,7 +129,7 @@
             this.Tbp_principal.Location = new System.Drawing.Point(12, 42);
             this.Tbp_principal.Name = "Tbp_principal";
             this.Tbp_principal.SelectedIndex = 0;
-            this.Tbp_principal.Size = new System.Drawing.Size(1091, 365);
+            this.Tbp_principal.Size = new System.Drawing.Size(1091, 381);
             this.Tbp_principal.TabIndex = 0;
             // 
             // tabPage1
@@ -239,7 +239,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1083, 339);
+            this.tabPage2.Size = new System.Drawing.Size(1083, 355);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -856,7 +856,7 @@
             this.Btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_nuevo.ImageKey = "IconoNuevo.png";
             this.Btn_nuevo.ImageList = this.imageList1;
-            this.Btn_nuevo.Location = new System.Drawing.Point(42, 417);
+            this.Btn_nuevo.Location = new System.Drawing.Point(42, 429);
             this.Btn_nuevo.Name = "Btn_nuevo";
             this.Btn_nuevo.Size = new System.Drawing.Size(70, 57);
             this.Btn_nuevo.TabIndex = 1;
@@ -884,7 +884,7 @@
             this.Btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_reporte.ImageKey = "reporte3.png";
             this.Btn_reporte.ImageList = this.imageList1;
-            this.Btn_reporte.Location = new System.Drawing.Point(244, 417);
+            this.Btn_reporte.Location = new System.Drawing.Point(244, 429);
             this.Btn_reporte.Name = "Btn_reporte";
             this.Btn_reporte.Size = new System.Drawing.Size(70, 57);
             this.Btn_reporte.TabIndex = 2;
@@ -899,7 +899,7 @@
             this.Btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_eliminar.ImageKey = "Eliminar.png";
             this.Btn_eliminar.ImageList = this.imageList1;
-            this.Btn_eliminar.Location = new System.Drawing.Point(144, 417);
+            this.Btn_eliminar.Location = new System.Drawing.Point(144, 429);
             this.Btn_eliminar.Name = "Btn_eliminar";
             this.Btn_eliminar.Size = new System.Drawing.Size(70, 57);
             this.Btn_eliminar.TabIndex = 3;
@@ -914,7 +914,7 @@
             this.Btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_salir.ImageKey = "CerrarSeccion2.png";
             this.Btn_salir.ImageList = this.imageList1;
-            this.Btn_salir.Location = new System.Drawing.Point(351, 417);
+            this.Btn_salir.Location = new System.Drawing.Point(351, 429);
             this.Btn_salir.Name = "Btn_salir";
             this.Btn_salir.Size = new System.Drawing.Size(70, 57);
             this.Btn_salir.TabIndex = 5;
@@ -948,7 +948,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(103)))), ((int)(((byte)(144)))));
-            this.ClientSize = new System.Drawing.Size(1115, 486);
+            this.ClientSize = new System.Drawing.Size(1115, 501);
             this.Controls.Add(this.Pnl_Mostrar);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Btn_eliminar);

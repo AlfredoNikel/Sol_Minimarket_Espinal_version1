@@ -121,7 +121,7 @@
             // 
             // Btn_Iniciar
             // 
-            this.Btn_Iniciar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Btn_Iniciar.BackColor = System.Drawing.Color.LimeGreen;
             this.Btn_Iniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Iniciar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Iniciar.Image")));
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(439, 412);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Iniciar);
